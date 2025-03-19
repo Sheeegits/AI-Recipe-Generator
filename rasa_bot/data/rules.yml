@@ -1,0 +1,7 @@
+version: "3.1"
+
+rules:
+  - rule: Handle user ingredient request
+    steps:
+      - intent: inform_ingredient
+      - action: action_recipe_suggestion

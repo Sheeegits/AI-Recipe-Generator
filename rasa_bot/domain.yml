@@ -1,0 +1,39 @@
+version: "3.1"
+intents:
+  - get_recipe
+  - inform_ingredient
+  - greet
+  - goodbye
+  - thank_you
+
+entities:
+  - ingredient
+
+slots:
+  ingredient:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ingredient
+        intent: inform_ingredient
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_ask_ingredient:
+    - text: "What ingredient would you like to use?"
+
+  utter_thank_you:
+    - text: "You're welcome! Let me know if you need anything else."
+
+  utter_ask_recipe:
+    - text: "Please provide an ingredient, and I will suggest a recipe for you."
+
+actions:
+  - action_get_recipe
+  - action_recipe_suggestion
+

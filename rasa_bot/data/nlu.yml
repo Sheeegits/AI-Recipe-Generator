@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi there
+      - Hey
+      - Greetings
+
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+      - Take care
+
+  - intent: get_recipe
+    examples: |
+      - Show me a recipe with [chicken](ingredient)
+      - I want a recipe for [pasta](ingredient)
+      - Can you suggest a recipe with [tomatoes](ingredient)?
+      - Find a recipe with [fish](ingredient)
+
+  - intent: inform_ingredient
+    examples: |
+      - I have [chicken](ingredient)
+      - I want to cook with [pasta](ingredient)
+      - My main ingredient is [tomatoes](ingredient)
+      - I have [spinach](ingredient)
+      - I’m using [garlic](ingredient) for the recipe

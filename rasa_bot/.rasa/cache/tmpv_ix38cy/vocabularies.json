@@ -1,0 +1,53 @@
+{
+  "text": {
+    "hello": 9,
+    "hi": 11,
+    "hey": 10,
+    "bye": 1,
+    "goodbye": 8,
+    "see": 16,
+    "you": 22,
+    "later": 13,
+    "give": 7,
+    "me": 14,
+    "a": 0,
+    "recipe": 15,
+    "with": 21,
+    "chicken": 3,
+    "i": 12,
+    "want": 20,
+    "to": 18,
+    "cook": 4,
+    "tomato": 19,
+    "can": 2,
+    "suggest": 17,
+    "dish": 5,
+    "garlic": 6
+  },
+  "intent": {
+    "greet": 3,
+    "goodbye": 2,
+    "get_recipe": 1,
+    "bot_challenge": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 7,
+    "action_restart": 8,
+    "action_session_start": 10,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 9,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 11,
+    "action_unlikely_intent": 12,
+    "action_back": 0,
+    "action_extract_slots": 5,
+    "action_get_recipe": 6,
+    "utter_goodbye": 13,
+    "utter_iamabot": 14
+  },
+  "action_text": null,
+  "intent_response_key": null
+}
