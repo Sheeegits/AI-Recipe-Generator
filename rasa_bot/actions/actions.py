@@ -1,62 +1,30 @@
 from rasa_sdk import Action
-from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk import Tracker
 from typing import Dict, List
-import random
 
-# Action to get a recipe based on an ingredient
+# Example recipes
+RECIPES = {
+    "butter chicken": "To make Butter Chicken: Marinate chicken with yogurt and spices, cook in a creamy tomato sauce, and serve with rice or naan.",
+    "pasta": "To make Pasta: Boil pasta, sauté garlic in olive oil, add tomatoes, mix with cooked pasta, and top with cheese.",
+    "chicken": "To make a Chicken Dish: Cook chicken with spices, onions, and tomatoes, then serve hot.",
+    "fish": "To make a Fish Dish: Grill fish with lemon and herbs, serve with rice or salad.",
+    "tomato": "Try making Tomato Soup: Blend cooked tomatoes, add cream and spices, and serve hot.",
+    "spinach": "Make Spinach Curry: Cook spinach with onions, garlic, and spices for a healthy dish."
+}
+
 class ActionGetRecipe(Action):
-    def name(self) -> str:
+    def name(self):
         return "action_get_recipe"
-    
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict) -> List[Dict]:
-        
-        # Get the ingredient slot value
-        ingredient = tracker.get_slot("ingredient")
-        
-        # Check if the ingredient is specified
-        if not ingredient:
-            dispatcher.utter_message(text="I couldn't detect an ingredient. Can you please specify one?")
-            return []
-        
-        # Simulate getting a recipe based on the ingredient
-        recipes = {
-            "chicken": {"title": "Grilled Chicken", "instructions": "Grill the chicken for 30 minutes."},
-            "tomato": {"title": "Tomato Soup", "instructions": "Boil tomatoes and blend them."},
-            "pasta": {"title": "Pasta", "instructions": "Boil pasta and mix with sauce."}
-        }
-        
-        # Get the recipe if available for the ingredient
-        recipe = recipes.get(ingredient.lower())
-        
-        # If recipe found, return the recipe, else inform the user
-        if recipe:
-            dispatcher.utter_message(text=f"Here is a recipe for {recipe['title']}:\n{recipe['instructions']}")
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict):
+        # Extract ingredient entity
+        ingredient = next(tracker.get_latest_entity_values("ingredient"), None)
+
+        if ingredient and ingredient.lower() in RECIPES:
+            response = f"Here is a recipe for {ingredient.capitalize()}:\n{RECIPES[ingredient.lower()]}"
         else:
-            dispatcher.utter_message(text="Sorry, I don't have a recipe for that ingredient.")
-        
-        return []
+            response = "Sorry, I don't have a recipe for that ingredient. Try another one!"
 
-# Action to suggest a recipe based on the ingredient slot
-class ActionRecipeSuggestion(Action):
-    def name(self) -> str:
-        return "action_recipe_suggestion"
-
-    def run(self, dispatcher, tracker, domain):
-        # Get the ingredient slot value
-        ingredient = tracker.get_slot('ingredient')
-        
-        # Check if the ingredient slot has a value
-        if not ingredient:
-            dispatcher.utter_message(text="I couldn't detect an ingredient. Could you please provide one?")
-            return []
-        
-        # Recipe suggestion logic
-        recipe = f"Here is a recipe suggestion using {ingredient}!"
-        
-        dispatcher.utter_message(text=recipe)
-        
+        dispatcher.utter_message(text=response)
         return []

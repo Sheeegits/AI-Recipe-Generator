@@ -1,0 +1,21 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJydjlEKgCAQBa+yB+gEXiViEXmEUJutaz/i3RPsX+jvDQzDW2tbqCbFwz5YvMRRHYPFn3D0wRGzQbpbMrQ7UTqao10Ba5NGMYPyUP8VJi8Ud0E2VoSY0Nr2AoNRUjQ=": "utter_ask_ingredient",
+    "eJydjlEKhDAMRK/SA3iCXmWRULqDBDXrpqk/xbsb0P+KfzPweDOfdgyhbYqdUjb+SQztCiRpRQx3WbgYxNlaoM6weLUYJgXs6DiqGZQu9J2h80LxryhGiswbnt1JZSYWX/+yO/rO8QTQKHK/": "action_listen",
+    "eJyljkEKwzAMBL/iB+QF/koIwiTbINooqSznYvz3CtJDby7tbReW2RlrG0I9FCel2XiXGOoVSNKGGN7lwdkgvi0Z6hsWrxbDqoC1DqOYQema/kboWCieBdlIMfOB73RSvhOLvy/sjH+ZHUGW267b51+bXnXZkY8=": "action_get_recipe",
+    "eJyljlEKwjAQRK+SA3iCXKXIEtqxLNpt3Wz8Cb27C5XiX4L+zcDw5g11v4S6KV6URuNVYqhHIEkLYviUB2eD+LZkqG9YvFoMswK2NxjFDErH9DdCw0LxLMhGipE39OmkfCcWf5/YGf8yG4Ist1WX778+3oxToId5fQOBarHn": "utter_recipe",
+    "eJylj1EKwkAMRK+yB/AEexWRsNSxBG1as1l/lt7dwErxb6v9y8Dw5uVc11Ooi+JFaTCeJYbaDpI0IYZPeHA2iHdLhnqHxaPFMCpga4dRzKDUqv8ROhaKZ0E2Ugy8YJ9Oyndi8fUrO+MosyPIcpt1+t7bxxuxCRxntr9/wF3eFZXQVg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0tjYWAFwgHUA=": "utter_thank_you",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0loA5pSUlqUXxCOX4TIoFAO+LOcg=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhKLWwNLW4JL4oNTmzILW2NhYA9HQfTg==": "utter_ask_ingredient",
+    "eJyFjFEKgCAQBa/iATqBV4lYxB6xVJutaz/i3RPq378ZGGaubXI1KR4K0fgS7+oHJOGEd78cnA3S25KhvWHpat4p7oJspIic0AazYgalkHdi2RQr98f4ubyM4z/Z": "action_listen",
+    "eJyljsEJgDAQBFtJAVaQVkSOoKsc6qmXi5+Q3g3ow58PfzuwzG6bS+Pyrjgp9MabeJfvQBJWePfAwtEgtZsitHZYKpp3iiMhGil63lE+ZMkMSiHOxDIpBq6Ov86Pgyzjput7r3QXScReqQ==": "action_get_recipe",
+    "eJylzkEKhTAMBNCr9ACeoFcRCUVHCX6jpqmb4t0t+BF3Cu4yMLxMnffK5UWxUWiNZ/EunwdJmODdP/w4GqR0U4SWDkuJ5p1iTYhGipYX7A9YMoNSiCOxDIqOi/HVfBjI0s863f+98wZcA96YzQGg3n8B": "utter_recipe",
+    "eJylz1EKgzAMBuCr9AA7Qa8iIxT3rwQ1aprupfTuFhTZmxu+5YefL0lX6sOVRfGh0BvP4l3ZB5IwwbsjjJwM0ro5QVuHpUXzTrFmJCNFzwvqBZbNoBTSQCxR8eJm3DUvDmR5zzp97/vNizgPuG/uf//BPTd/H51w": "action_listen",
+    "eJytkFEKwjAQRK+SA3iCXKVIiO0YFu2mbjaChN7dhYr4F6H924Hh7cwMbT25tgieIY5Kmb1r2xE4zvDuI+5UFGzeWiDmITap3gkeFUWDYKQFawdWVSEhllsgToKJjLGX2QlIfM0y//77j5fwDbCfufU+DNepnHKeLi8b7vwGNaC4Fg==": "utter_goodbye",
+    "eJytkVEKwjAQRK+SA3iCXEUkpO0YFu2mbjaChN7dQGvxR1KofzswvJ1hzmU+mTIJns73SpGtKcvh2I+wZhV3Sgqu3pwg1UNcpVojeGQkdYKeJswNWFaFOJ9ujjgIBqqMo8xGQOJrlPH73z5ewBbgOHPp/Tdco3KIceheO8f4mH9TLm85DtLM": "action_listen"
+  }
+}

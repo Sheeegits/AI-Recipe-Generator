@@ -1,13 +1,36 @@
-version: "3.0"
-stories:
-  - story: Greet and suggest recipe
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: inform_ingredient
-      - action: action_recipe_suggestion
+version: "3.1"
 
-  - story: Farewell the user
-    steps:
-      - intent: goodbye
-      - action: utter_goodbye
+stories:
+
+- story: User asks for a recipe
+  steps:
+  - intent: request_recipe
+  - action: utter_ask_ingredient
+  - intent: inform_ingredient
+  - action: action_get_recipe
+  - action: utter_recipe
+
+- story: User greets and asks for a recipe
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request_recipe
+  - action: utter_ask_ingredient
+  - intent: inform_ingredient
+  - action: action_get_recipe
+  - action: utter_recipe
+
+- story: User asks for a recipe and then says goodbye
+  steps:
+  - intent: request_recipe
+  - action: utter_ask_ingredient
+  - intent: inform_ingredient
+  - action: action_get_recipe
+  - action: utter_recipe
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: User thanks the bot
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
